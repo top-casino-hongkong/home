@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<input type="checkbox" id="rev-modal" class="modal-toggle" hidden>
 
 <!-- ============================ 1. HEADER ============================ -->
 <header class="site-header">
@@ -34,6 +35,7 @@
       <ul class="nav-links">
         <li><a href="#top">首頁</a></li>
         <li><a href="#toplist">排行榜</a></li>
+        <li><label class="nav-link-btn" for="rev-modal">娛樂城評測 <span class="caret">▾</span></label></li>
         <li><a href="#criteria">評測準則</a></li>
         <li><a href="#games">熱門遊戲</a></li>
         <li><a href="#faq">常見問題</a></li>
@@ -50,12 +52,7 @@
   <div class="container">
     <div class="hero-grid">
       <div class="hero-copy">
-        <div class="hero-badges">
-          <span class="chip"><span class="dot"></span>獨立評測</span>
-          <span class="chip"><span class="dot"></span>每月更新</span>
-          <span class="chip"><span class="dot"></span>真錢實試</span>
-        </div>
-        <h1 class="hero-title">香港 Top 娛樂城排行榜：2026 年<span class="hl">最強之選</span></h1>
+<h1 class="hero-title">香港 Top 娛樂城排行榜：2026 年<span class="hl">最強之選</span></h1>
         <p class="hero-sub">我哋實測咗 <b>30 多間</b>網上娛樂城，由安全性、遊戲、出款速度到獎金逐項評分，揀出最值得香港玩家玩嘅頭五名。</p>
         <div class="hero-actions">
           <a class="btn btn-gold btn-lg" href="#toplist">睇完整排行榜</a>
@@ -74,7 +71,6 @@
 <!-- ============================ 3. TOPLIST ============================ -->
 <section class="section" id="toplist">
   <div class="head-center">
-    <span class="eyebrow">Ranking 2026</span>
     <h2 class="section-title">香港網上娛樂城<span class="gold">頭五名</span></h2>
     <p class="lead">逐項實測評分，由高至低排列。榜上每間都對香港玩家開放，支援港幣同 FPS 轉數快。</p>
   </div>
@@ -87,18 +83,13 @@
         <div class="rank-info">
           <div class="rank-name">g1vip 娛樂城 <span>旗艦推薦</span></div>
           <div class="rank-tag">編輯首選 · 綜合評分最高</div>
-          <div class="rank-chips">
-            <span class="chip-mini">過千款遊戲</span>
-            <span class="chip-mini">極速出款</span>
-            <span class="chip-mini">繁中客服 24/7</span>
-          </div>
         </div>
         <div class="rank-meta">
           <div class="rank-score"><b>9.7</b><small>/10</small></div>
           <div class="rank-stars">★★★★★</div>
           <div class="rank-bonus">首存 100% 高達 <b>HK$8,000</b> 再送 100 次免費旋轉</div>
           <div class="rank-cta"><a class="btn btn-gold" href="play-and-win/" target="_blank" rel="nofollow noopener">立即遊玩</a></div>
-          <div class="rank-review"><a href="#">睇詳細評測</a></div>
+          <div class="rank-review"><a href="reviews/g1vip.html">睇詳細評測</a></div>
         </div>
       </article>
 
@@ -107,18 +98,13 @@
         <div class="rank-info">
           <div class="rank-name">GameOne 娛樂城 <span>港區人氣</span></div>
           <div class="rank-tag">真人娛樂場首選</div>
-          <div class="rank-chips">
-            <span class="chip-mini">真人荷官</span>
-            <span class="chip-mini">FPS 轉數快</span>
-            <span class="chip-mini">每日回水</span>
-          </div>
         </div>
         <div class="rank-meta">
           <div class="rank-score"><b>9.4</b><small>/10</small></div>
           <div class="rank-stars">★★★★★</div>
           <div class="rank-bonus">迎新獎金高達 <b>HK$6,000</b></div>
           <div class="rank-cta"><a class="btn btn-gold" href="play-and-win/promotions/" target="_blank" rel="nofollow noopener">立即遊玩</a></div>
-          <div class="rank-review"><a href="#">睇詳細評測</a></div>
+          <div class="rank-review"><a href="reviews/gameone.html">睇詳細評測</a></div>
         </div>
       </article>
 
@@ -127,18 +113,13 @@
         <div class="rank-info">
           <div class="rank-name">SpinLux 娛樂城 <span>爆分之選</span></div>
           <div class="rank-tag">老虎機玩家至愛</div>
-          <div class="rank-chips">
-            <span class="chip-mini">2000+ 老虎機</span>
-            <span class="chip-mini">高 RTP</span>
-            <span class="chip-mini">加密貨幣</span>
-          </div>
         </div>
         <div class="rank-meta">
           <div class="rank-score"><b>9.2</b><small>/10</small></div>
           <div class="rank-stars">★★★★☆</div>
           <div class="rank-bonus"><b>150 次</b>免費旋轉 + HK$3,000</div>
           <div class="rank-cta"><a class="btn btn-gold" href="play-and-win/slots/" target="_blank" rel="nofollow noopener">立即遊玩</a></div>
-          <div class="rank-review"><a href="#">睇詳細評測</a></div>
+          <div class="rank-review"><a href="reviews/spinlux.html">睇詳細評測</a></div>
         </div>
       </article>
 
@@ -147,18 +128,13 @@
         <div class="rank-info">
           <div class="rank-name">OddsHero 娛樂城 <span>盤口最齊</span></div>
           <div class="rank-tag">體育同真人皆宜</div>
-          <div class="rank-chips">
-            <span class="chip-mini">體育博彩</span>
-            <span class="chip-mini">真人枱</span>
-            <span class="chip-mini">每週回贈</span>
-          </div>
         </div>
         <div class="rank-meta">
           <div class="rank-score"><b>9.0</b><small>/10</small></div>
           <div class="rank-stars">★★★★☆</div>
           <div class="rank-bonus">HK$5,000 迎新 + 每週回水 <b>10%</b></div>
           <div class="rank-cta"><a class="btn btn-gold" href="play-and-win/live/" target="_blank" rel="nofollow noopener">立即遊玩</a></div>
-          <div class="rank-review"><a href="#">睇詳細評測</a></div>
+          <div class="rank-review"><a href="reviews/oddshero.html">睇詳細評測</a></div>
         </div>
       </article>
 
@@ -167,18 +143,13 @@
         <div class="rank-info">
           <div class="rank-name">AceVault 娛樂城 <span>撲克新貴</span></div>
           <div class="rank-tag">新平台 · 高回贈</div>
-          <div class="rank-chips">
-            <span class="chip-mini">撲克室</span>
-            <span class="chip-mini">快速提款</span>
-            <span class="chip-mini">流動版</span>
-          </div>
         </div>
         <div class="rank-meta">
           <div class="rank-score"><b>8.8</b><small>/10</small></div>
           <div class="rank-stars">★★★★☆</div>
           <div class="rank-bonus">HK$4,000 迎新 + 撲克免費賽</div>
           <div class="rank-cta"><a class="btn btn-gold" href="play-and-win/poker/" target="_blank" rel="nofollow noopener">立即遊玩</a></div>
-          <div class="rank-review"><a href="#">睇詳細評測</a></div>
+          <div class="rank-review"><a href="reviews/acevault.html">睇詳細評測</a></div>
         </div>
       </article>
 
@@ -190,7 +161,6 @@
 <section class="section alt" id="criteria">
   <div class="container">
     <div class="head-center">
-      <span class="eyebrow">How We Rate</span>
       <h2 class="section-title">評測準則：<span class="hl">五項實測</span></h2>
       <p class="lead">每一間娛樂城我哋都用真錢逐項打分先入榜。想睇更詳細嘅營運資料，可以參考 <a href="https://gameonehkg.com" target="_blank" rel="noopener">GameOne 香港</a>。</p>
     </div>
@@ -228,7 +198,6 @@
 <section class="section">
   <div class="container">
     <div class="head-center">
-      <span class="eyebrow">Why Trust Us</span>
       <h2 class="section-title">點解信我哋嘅排行榜：<span class="gold">四個原因</span></h2>
     </div>
     <div class="feature-grid">
@@ -260,7 +229,6 @@
 <section class="section alt" id="games">
   <div class="container">
     <div class="head-center">
-      <span class="eyebrow">Popular Games</span>
       <h2 class="section-title">熱門遊戲：<span class="hl">榜上都玩到</span></h2>
       <p class="lead">呢啲遊戲喺我哋推介嘅娛樂城都玩到，好似 <a href="https://gameone-play.com" target="_blank" rel="noopener">GameOne 平台</a> 收錄嘅熱門作品。</p>
     </div>
@@ -298,7 +266,6 @@
 <section class="section">
   <div class="container">
     <div class="head-center">
-      <span class="eyebrow">Banking</span>
       <h2 class="section-title">入數提款：<span class="hl">榜上通用</span></h2>
     </div>
     <div class="pay-wrap">
@@ -330,7 +297,6 @@
 <section class="section alt">
   <div class="container">
     <div class="head-center">
-      <span class="eyebrow">Get Started</span>
       <h2 class="section-title">三步開始：<span class="gold">即刻上手</span></h2>
     </div>
     <div class="start-wrap">
@@ -352,7 +318,6 @@
 <section class="section" id="faq">
   <div class="container">
     <div class="head-center">
-      <span class="eyebrow">FAQ</span>
       <h2 class="section-title">常見問題：<span class="hl">你想知嘅都喺度</span></h2>
     </div>
     <div class="faq-list">
@@ -457,6 +422,23 @@
     </div>
   </div>
 </footer>
+
+<!-- ============================ CASINO REVIEWS MODAL ============================ -->
+<div class="modal-overlay">
+  <label class="modal-backdrop" for="rev-modal" aria-label="關閉"></label>
+  <div class="modal-box">
+    <label class="modal-close" for="rev-modal" aria-label="關閉">✕</label>
+    <h3>娛樂城評測一覽</h3>
+    <p class="msub">撳入去睇每間嘅詳細評測同評分。</p>
+    <div class="modal-list">
+      <a class="modal-row top" href="reviews/g1vip.html"><span class="mr-rank">1</span><span class="mr-name">g1vip 娛樂城<small>旗艦推薦</small></span><span class="mr-score">9.7</span><span class="mr-go">睇評測</span></a>
+      <a class="modal-row" href="reviews/gameone.html"><span class="mr-rank">2</span><span class="mr-name">GameOne 娛樂城<small>港區人氣</small></span><span class="mr-score">9.4</span><span class="mr-go">睇評測</span></a>
+      <a class="modal-row" href="reviews/spinlux.html"><span class="mr-rank">3</span><span class="mr-name">SpinLux 娛樂城<small>爆分之選</small></span><span class="mr-score">9.2</span><span class="mr-go">睇評測</span></a>
+      <a class="modal-row" href="reviews/oddshero.html"><span class="mr-rank">4</span><span class="mr-name">OddsHero 娛樂城<small>盤口最齊</small></span><span class="mr-score">9.0</span><span class="mr-go">睇評測</span></a>
+      <a class="modal-row" href="reviews/acevault.html"><span class="mr-rank">5</span><span class="mr-name">AceVault 娛樂城<small>撲克新貴</small></span><span class="mr-score">8.8</span><span class="mr-go">睇評測</span></a>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
