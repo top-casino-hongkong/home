@@ -522,3 +522,5 @@ ul{margin:0;padding:0;list-style:none;}
   .rank-chips{justify-content:center;}
   .criteria-grid{grid-template-columns:1fr;}
 }
+
+.section-cta{text-align:center;margin-top:36px;}
